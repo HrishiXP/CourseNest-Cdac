@@ -6,7 +6,8 @@ namespace CourseNestAPI.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    [Authorize]
+    //[Authorize]
+    [Authorize(Policy = "AllowAnonymous")]
     public class UserEnrollmentController : ControllerBase
     {
         private readonly IUserEnrollmentRepository _userEnrollmentRepo;

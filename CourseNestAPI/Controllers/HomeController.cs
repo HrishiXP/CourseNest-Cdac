@@ -3,11 +3,13 @@ using CourseNest.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 using CourseNest;
+using Microsoft.AspNetCore.Authorization;
 
 namespace CourseNestAPI.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize(Policy = "AllowAnonymous")]
     public class HomeController : ControllerBase
     {
         private readonly ILogger<HomeController> _logger;

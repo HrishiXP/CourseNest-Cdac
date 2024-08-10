@@ -16,7 +16,11 @@ namespace CourseNestAPI
 
             // Add services to the container.
 
-            builder.Services.AddControllers();
+            builder.Services.AddControllers()
+     .AddJsonOptions(options =>
+     {
+         options.JsonSerializerOptions.ReferenceHandler = System.Text.Json.Serialization.ReferenceHandler.Preserve;
+     });
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
@@ -39,6 +43,11 @@ namespace CourseNestAPI
             builder.Services.AddTransient<ICategoryRepository, CategoryRepository>();
             builder.Services.AddTransient<IFileService, FileService>();
             builder.Services.AddTransient<ICourseRepository, courseRepository>();
+
+            builder.Services.AddAuthorization(options =>
+            {
+                options.AddPolicy("AllowAnonymous", policy => policy.RequireAssertion(_ => true));
+            });
 
 
 
@@ -63,6 +72,8 @@ namespace CourseNestAPI
             }
 
             app.UseHttpsRedirection();
+
+            
 
             app.UseAuthorization();
 

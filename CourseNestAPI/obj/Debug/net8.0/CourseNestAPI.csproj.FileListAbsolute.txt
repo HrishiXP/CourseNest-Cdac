@@ -343,3 +343,7 @@ D:\CDAC\CourseNest\CourseNestAPI\obj\Debug\net8.0\refint\CourseNestAPI.dll
 D:\CDAC\CourseNest\CourseNestAPI\obj\Debug\net8.0\CourseNestAPI.pdb
 D:\CDAC\CourseNest\CourseNestAPI\obj\Debug\net8.0\CourseNestAPI.genruntimeconfig.cache
 D:\CDAC\CourseNest\CourseNestAPI\obj\Debug\net8.0\ref\CourseNestAPI.dll
+D:\CDAC\CourseNest\CourseNestAPI\bin\Debug\net8.0\Microsoft.AspNetCore.JsonPatch.dll
+D:\CDAC\CourseNest\CourseNestAPI\bin\Debug\net8.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+D:\CDAC\CourseNest\CourseNestAPI\bin\Debug\net8.0\Newtonsoft.Json.dll
+D:\CDAC\CourseNest\CourseNestAPI\bin\Debug\net8.0\Newtonsoft.Json.Bson.dll

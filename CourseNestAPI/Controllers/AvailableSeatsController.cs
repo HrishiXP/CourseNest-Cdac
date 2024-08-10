@@ -8,7 +8,8 @@ namespace CourseNestAPI.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    [Authorize(Roles = nameof(Roles.Admin))]
+    // [Authorize(Roles = nameof(Roles.Admin))]
+    [Authorize(Policy = "AllowAnonymous")]
     public class AvailableSeatsController : ControllerBase
     {
         private readonly ISeatsRepository _seatsRepo;

@@ -11,7 +11,8 @@ namespace CourseNestAPI.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    [Authorize(Roles = nameof(Roles.Admin))]
+    // [Authorize(Roles = nameof(Roles.Admin))]
+    [Authorize(Policy = "AllowAnonymous")]
     public class CourseController : ControllerBase
     {
         private readonly ICourseRepository _courseRepo;

@@ -9,7 +9,8 @@ namespace CourseNestAPI.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    [Authorize(Roles = nameof(Roles.Admin))]
+    // [Authorize(Roles = nameof(Roles.Admin))]
+    [Authorize(Policy = "AllowAnonymous")]
     public class CategoryController : ControllerBase
     {
         private readonly ICategoryRepository _categoryRepo;

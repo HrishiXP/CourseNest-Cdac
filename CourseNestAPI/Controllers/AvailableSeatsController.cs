@@ -2,7 +2,6 @@
 using CourseNest.Models.DTOs;
 using CourseNest.Repositories;
 using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CourseNestAPI.Controllers
@@ -12,7 +11,6 @@ namespace CourseNestAPI.Controllers
     [Authorize(Roles = nameof(Roles.Admin))]
     public class AvailableSeatsController : ControllerBase
     {
-
         private readonly ISeatsRepository _seatsRepo;
 
         public AvailableSeatsController(ISeatsRepository seatsRepo)
@@ -20,55 +18,51 @@ namespace CourseNestAPI.Controllers
             _seatsRepo = seatsRepo;
         }
 
-        public async Task<IActionResult> Index(string sTerm = "")
+        // Get all available seats optionally filtered by search term
+        [HttpGet]
+        public async Task<IActionResult> GetAvailableSeats(string sTerm = "")
         {
-            var seatss = await _seatsRepo.GetSeatss(sTerm);
-            if (seatss == null)
+            var seats = await _seatsRepo.GetSeatss(sTerm);
+            if (seats == null || !seats.Any())
             {
-                return NotFound();
+                return NotFound("No seats found.");
             }
-            return Ok(seatss);
-
+            return Ok(seats);
         }
 
-        public async Task<IActionResult> ManangeSeats(int courseId)
+        // Get seat management data for a specific course
+        [HttpGet("{courseId}")]
+        public async Task<IActionResult> ManageSeats(int courseId)
         {
-            var existingSeats = await _seatsRepo.GetAvailableSteatsByCourseId(courseId);
-            var seats = new SeatsDTO
+            var existingSeats = await _seatsRepo.GetAvailableSteatsByCourseId(courseId);    
+            var seatsDto = new SeatsDTO
             {
                 CourseId = courseId,
-                SeatCount = existingSeats != null
-            ? existingSeats.SeatCount : 0
+                SeatCount = existingSeats?.SeatCount ?? 0
             };
-            if (seats == null)
-            {
-                return NotFound();
-            }
-            return Ok(seats);
 
+            return Ok(seatsDto);
         }
 
+        // Update seats for a specific course
         [HttpPost]
-        public async Task<IActionResult> ManangeSeats(SeatsDTO seats)
+        public async Task<IActionResult> ManageSeats(SeatsDTO seatsDto)
         {
             if (!ModelState.IsValid)
-                if (seats == null)
-                {
-                    return NotFound();
-                }
-            return Ok(seats);
+            {
+                return BadRequest(ModelState);
+            }
 
             try
             {
-                await _seatsRepo.ManageSeats(seats);
-                return Ok(new { message = "AvailableSeats is updated successfully." });
+                await _seatsRepo.ManageSeats(seatsDto);
+                return Ok(new { message = "Seats updated successfully." });
             }
             catch (Exception ex)
             {
-                return Ok(new { message = "Something went wrong!!" });
+                // Log the exception (ex) if necessary
+                return StatusCode(500, "An error occurred while updating the seats.");
             }
-
-            return RedirectToAction(nameof(Index));
         }
     }
 }

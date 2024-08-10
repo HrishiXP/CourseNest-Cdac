@@ -52,6 +52,8 @@ namespace CourseNestAPI
                 app.UseSwaggerUI(c =>
                 {
                     c.SwaggerEndpoint("/swagger/v1/swagger.json", "CourseNestAPI V1");
+                    //https://localhost:7105/swagger/index.html
+
                 });
             }
             else
@@ -64,8 +66,8 @@ namespace CourseNestAPI
 
             app.UseAuthorization();
 
-
             app.MapControllers();
+
 
             app.Run();
         }

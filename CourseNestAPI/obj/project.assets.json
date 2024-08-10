@@ -5326,19 +5326,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Asus\\.nuget\\packages\\": {}
+    "C:\\Users\\Akash T Kalpande\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Asus\\source\\repos\\CourseNestAPI\\CourseNestAPI.csproj",
+      "projectUniqueName": "D:\\CDAC\\CourseNest\\CourseNestAPI\\CourseNestAPI.csproj",
       "projectName": "CourseNestAPI",
-      "projectPath": "C:\\Users\\Asus\\source\\repos\\CourseNestAPI\\CourseNestAPI.csproj",
-      "packagesPath": "C:\\Users\\Asus\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Asus\\source\\repos\\CourseNestAPI\\obj\\",
+      "projectPath": "D:\\CDAC\\CourseNest\\CourseNestAPI\\CourseNestAPI.csproj",
+      "packagesPath": "C:\\Users\\Akash T Kalpande\\.nuget\\packages\\",
+      "outputPath": "D:\\CDAC\\CourseNest\\CourseNestAPI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Asus\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Akash T Kalpande\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

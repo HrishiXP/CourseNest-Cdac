@@ -1,6 +1,5 @@
 ﻿using CourseNest.Models.DTOs;
 using CourseNest.Repositories;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 
@@ -11,85 +10,86 @@ namespace CourseNestAPI.Controllers
     public class AdminOperationsController : ControllerBase
     {
         private readonly IUserEnrollmentRepository _userEnrollmentRepository;
+
         public AdminOperationsController(IUserEnrollmentRepository userEnrollmentRepository)
         {
             _userEnrollmentRepository = userEnrollmentRepository;
         }
 
-        public async Task<IActionResult> AllEnrollments()
+        // Get all user enrollments
+        [HttpGet("enrollments")]
+        public async Task<IActionResult> GetAllEnrollments()
         {
             var enrollments = await _userEnrollmentRepository.UserEnrollments(true);
             if (enrollments == null)
             {
-                return NotFound();
+                return NotFound("No enrollments found.");
             }
             return Ok(enrollments);
-
         }
 
-
-
-        public async Task<IActionResult> UpdateEnrollmentStatus(int enrollmentId)
+        // Get details to update enrollment status
+        [HttpGet("enrollments/{enrollmentId}")]
+        public async Task<IActionResult> GetEnrollmentStatusUpdate(int enrollmentId)
         {
             var enrollment = await _userEnrollmentRepository.GetEnrollmentById(enrollmentId);
             if (enrollment == null)
             {
-                throw new InvalidOperationException($"Enrollmentwith id:{enrollmentId} does not found.");
+                return NotFound($"Enrollment with id: {enrollmentId} was not found.");
             }
+
             var enrollmentStatusList = (await _userEnrollmentRepository.GetEnrollmentStatuses()).Select(enrollmentStatus =>
-            {
-                return new SelectListItem { Value = enrollmentStatus.Id.ToString(), Text = enrollmentStatus.EnrollmentStatusName, Selected = enrollment.EnrollmentStatusId == enrollmentStatus.Id };
-            });
+                new SelectListItem
+                {
+                    Value = enrollmentStatus.Id.ToString(),
+                    Text = enrollmentStatus.EnrollmentStatusName,
+                    Selected = enrollment.EnrollmentStatusId == enrollmentStatus.Id
+                });
+
             var data = new UpdateEnrollmentStatusModel
             {
                 EnrollmentId = enrollmentId,
                 EnrollmentStatusId = enrollment.EnrollmentStatusId,
                 EnrollmentStatusList = enrollmentStatusList
             };
-            if (data == null)
-            {
-                return NotFound();
-            }
-            return Ok(data);
 
+            return Ok(data);
         }
 
-        [HttpPost]
+        // Update enrollment status
+        [HttpPut("enrollments/{enrollmentId}")]
         public async Task<IActionResult> UpdateEnrollmentStatus(UpdateEnrollmentStatusModel data)
         {
-            try
+            if (!ModelState.IsValid)
             {
-                if (!ModelState.IsValid)
-                {
-                    data.EnrollmentStatusList = (await _userEnrollmentRepository.GetEnrollmentStatuses()).Select(enrollmentStatus =>
+                data.EnrollmentStatusList = (await _userEnrollmentRepository.GetEnrollmentStatuses()).Select(enrollmentStatus =>
+                    new SelectListItem
                     {
-                        return new SelectListItem { Value = enrollmentStatus.Id.ToString(), Text = enrollmentStatus.EnrollmentStatusName, Selected = enrollmentStatus.Id == data.EnrollmentStatusId };
+                        Value = enrollmentStatus.Id.ToString(),
+                        Text = enrollmentStatus.EnrollmentStatusName,
+                        Selected = enrollmentStatus.Id == data.EnrollmentStatusId
                     });
 
-                    if (data == null)
-                    {
-                        return NotFound();
-                    }
-                    return Ok(data);
-                }
+                return BadRequest("Invalid model state.");
+            }
+
+            try
+            {
                 await _userEnrollmentRepository.ChangeEnrollmentStatus(data);
-                return Ok(new { message = "Updated successfully" });
+                return Ok(new { message = "Enrollment status updated successfully." });
             }
             catch (Exception ex)
             {
-                // catch exception here
-                return Ok(new { message = "Something went wrong" });
+                // Log exception (ex) if needed
+                return StatusCode(500, "An error occurred while updating enrollment status.");
             }
-            return RedirectToAction(nameof(UpdateEnrollmentStatus), new { enrollmentId = data.EnrollmentId });
         }
 
-
+        // Admin dashboard placeholder
+        [HttpGet("dashboard")]
         public IActionResult Dashboard()
         {
-            
-            return Ok();
-
+            return Ok("Admin dashboard placeholder.");
         }
-
     }
 }

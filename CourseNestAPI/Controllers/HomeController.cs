@@ -1,9 +1,8 @@
 ﻿using CourseNest.Models.DTOs;
 using CourseNest.Models;
-using CourseNest;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
+using CourseNest;
 
 namespace CourseNestAPI.Controllers
 {
@@ -20,39 +19,43 @@ namespace CourseNestAPI.Controllers
             _logger = logger;
         }
 
-        public async Task<IActionResult> Index(string sterm = "", int categoryId = 0)
+        // Get courses with optional search term and category filter
+        [HttpGet("courses")]
+        public async Task<IActionResult> GetCourses(string sterm = "", int categoryId = 0)
         {
-            IEnumerable<Course> courses = await _homeRepository.GetCourse(sterm, categoryId);
-            IEnumerable<Category> categories = await _homeRepository.Categories();
-            CourseDisplayModel courseModel = new CourseDisplayModel
+            var courses = await _homeRepository.GetCourse(sterm, categoryId);
+            var categories = await _homeRepository.Categories();
+
+            var courseModel = new CourseDisplayModel
             {
                 Courses = courses,
                 Categories = categories,
                 STerm = sterm,
                 CategoryId = categoryId
             };
-            if (courseModel == null)
+
+            if (!courseModel.Courses.Any())
             {
-                return NotFound();
+                return NotFound("No courses found matching the criteria.");
             }
+
             return Ok(courseModel);
         }
 
+        // Get privacy policy
+        [HttpGet("privacy")]
         public IActionResult Privacy()
         {
-            return Ok();
+            return Ok("Privacy policy details...");
         }
 
+        // Get error details
+        [HttpGet("error")]
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
-            if (new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier } == null)
-            {
-                return NotFound();
-            }
-            return Ok(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
-
+            var errorModel = new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier };
+            return Ok(errorModel);
         }
-
     }
 }

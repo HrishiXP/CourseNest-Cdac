@@ -1,6 +1,5 @@
 ﻿using CourseNest.Repositories;
 using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CourseNestAPI.Controllers
@@ -10,19 +9,21 @@ namespace CourseNestAPI.Controllers
     [Authorize]
     public class UserEnrollmentController : ControllerBase
     {
-
         private readonly IUserEnrollmentRepository _userEnrollmentRepo;
 
         public UserEnrollmentController(IUserEnrollmentRepository userEnrollmentRepo)
         {
             _userEnrollmentRepo = userEnrollmentRepo;
         }
-        public async Task<IActionResult> UserEnrollments()
+
+        // Get all enrollments for the current user
+        [HttpGet("enrollments")]
+        public async Task<IActionResult> GetUserEnrollments()
         {
             var enrollments = await _userEnrollmentRepo.UserEnrollments();
-            if (enrollments == null)
+            if (enrollments == null || !enrollments.Any())
             {
-                return NotFound();
+                return NotFound("No enrollments found for the current user.");
             }
             return Ok(enrollments);
         }

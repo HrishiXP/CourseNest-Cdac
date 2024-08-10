@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace CourseNestAPI.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20240810165210_InitialCreate")]
-    partial class InitialCreate
+    [Migration("20240810172442_initial")]
+    partial class initial
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

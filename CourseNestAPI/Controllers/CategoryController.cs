@@ -2,9 +2,7 @@
 using CourseNest.Models;
 using CourseNest.Repositories;
 using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using System.Data;
 using CourseNest.Constants;
 
 namespace CourseNestAPI.Controllers
@@ -14,7 +12,6 @@ namespace CourseNestAPI.Controllers
     [Authorize(Roles = nameof(Roles.Admin))]
     public class CategoryController : ControllerBase
     {
-
         private readonly ICategoryRepository _categoryRepo;
 
         public CategoryController(ICategoryRepository categoryRepo)
@@ -22,7 +19,9 @@ namespace CourseNestAPI.Controllers
             _categoryRepo = categoryRepo;
         }
 
-        public async Task<IActionResult> Index()
+        // Get all categories
+        [HttpGet]
+        public async Task<IActionResult> GetAllCategories()
         {
             var categories = await _categoryRepo.GetCategories();
             if (categories == null)
@@ -32,97 +31,84 @@ namespace CourseNestAPI.Controllers
             return Ok(categories);
         }
 
-        public IActionResult AddCategory()
+        // Get a form for adding a new category (if needed, otherwise remove this method)
+        [HttpGet("add")]
+        public IActionResult AddCategoryForm()
         {
-            
-            return Ok();
+            return Ok(); // Assuming this returns some form data or structure
         }
 
+        // Add a new category
         [HttpPost]
         public async Task<IActionResult> AddCategory(CategoryDTO category)
         {
             if (!ModelState.IsValid)
             {
-                if (category == null)
-                {
-                    return NotFound();
-                }
-                return Ok(category);
-            }
-            try
-            {
-                var categoryToAdd = new Category { CategoryName = category.CategoryName, Id = category.Id };
-                await _categoryRepo.AddCategory(categoryToAdd);
-                return Ok(new { message = "Category added successfully" });
-                return RedirectToAction(nameof(AddCategory));
-            }
-            catch (Exception ex)
-            {
-                return Ok(new { message = "Category could not added!" });
-                if (category == null)
-                {
-                    return NotFound();
-                }
-                return Ok(category);
+                return BadRequest(ModelState);
             }
 
+            var categoryToAdd = new Category
+            {
+                CategoryName = category.CategoryName,
+                Id = category.Id
+            };
+
+            await _categoryRepo.AddCategory(categoryToAdd);
+            return Ok(new { message = "Category added successfully" });
         }
 
-        public async Task<IActionResult> UpdateCategory(int id)
+        // Get a category by ID (for updating)
+        [HttpGet("{id}")]
+        public async Task<IActionResult> GetCategoryById(int id)
         {
             var category = await _categoryRepo.GetCategoryById(id);
-            if (category is null)
-                throw new InvalidOperationException($"Category with id: {id} does not found");
-            var categoryToUpdate = new CategoryDTO
+            if (category == null)
+            {
+                return NotFound($"Category with id: {id} not found");
+            }
+
+            var categoryDto = new CategoryDTO
             {
                 Id = category.Id,
                 CategoryName = category.CategoryName
             };
-            if (categoryToUpdate == null)
-            {
-                return NotFound();
-            }
-            return Ok(categoryToUpdate);
+
+            return Ok(categoryDto);
         }
 
-        [HttpPost]
-        public async Task<IActionResult> UpdateCategory(CategoryDTO categoryToUpdate)
+        // Update an existing category
+        [HttpPut("{id}")]
+        public async Task<IActionResult> UpdateCategory(int id, CategoryDTO categoryToUpdate)
         {
             if (!ModelState.IsValid)
             {
-                if (categoryToUpdate == null)
-                {
-                    return NotFound();
-                }
-                return Ok(categoryToUpdate);
-            }
-            try
-            {
-                var category = new Category { CategoryName = categoryToUpdate.CategoryName, Id = categoryToUpdate.Id };
-                await _categoryRepo.UpdateCategory(category);
-                return Ok(new { message = "Category is updated successfully" });
-                return RedirectToAction(nameof(Index));
-            }
-            catch (Exception ex)
-            {
-                return Ok(new { message = "Category could not updated!" });
-                if (categoryToUpdate == null)
-                {
-                    return NotFound();
-                }
-                return Ok(categoryToUpdate);
+                return BadRequest(ModelState);
             }
 
+            var existingCategory = await _categoryRepo.GetCategoryById(id);
+            if (existingCategory == null)
+            {
+                return NotFound($"Category with id: {id} not found");
+            }
+
+            existingCategory.CategoryName = categoryToUpdate.CategoryName;
+
+            await _categoryRepo.UpdateCategory(existingCategory);
+            return Ok(new { message = "Category updated successfully" });
         }
 
+        // Delete a category
+        [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteCategory(int id)
         {
             var category = await _categoryRepo.GetCategoryById(id);
-            if (category is null)
-                throw new InvalidOperationException($"Category with id: {id} does not found");
-            await _categoryRepo.DeleteCategory(category);
-            return RedirectToAction(nameof(Index));
+            if (category == null)
+            {
+                return NotFound($"Category with id: {id} not found");
+            }
 
+            await _categoryRepo.DeleteCategory(category);
+            return Ok(new { message = "Category deleted successfully" });
         }
     }
 }

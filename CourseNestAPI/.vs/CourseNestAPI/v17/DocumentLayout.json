@@ -1,0 +1,475 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Asus\\source\\repos\\CourseNestAPI\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{83AAC1B4-B2AF-4E28-A667-605AB6290A4B}|CourseNestAPI.csproj|c:\\users\\asus\\source\\repos\\coursenestapi\\controllers\\enrollmentcartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{83AAC1B4-B2AF-4E28-A667-605AB6290A4B}|CourseNestAPI.csproj|solutionrelative:controllers\\enrollmentcartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83AAC1B4-B2AF-4E28-A667-605AB6290A4B}|CourseNestAPI.csproj|c:\\users\\asus\\source\\repos\\coursenestapi\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{83AAC1B4-B2AF-4E28-A667-605AB6290A4B}|CourseNestAPI.csproj|solutionrelative:controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83AAC1B4-B2AF-4E28-A667-605AB6290A4B}|CourseNestAPI.csproj|c:\\users\\asus\\source\\repos\\coursenestapi\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{83AAC1B4-B2AF-4E28-A667-605AB6290A4B}|CourseNestAPI.csproj|solutionrelative:controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83AAC1B4-B2AF-4E28-A667-605AB6290A4B}|CourseNestAPI.csproj|c:\\users\\asus\\source\\repos\\coursenestapi\\controllers\\userenrollmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{83AAC1B4-B2AF-4E28-A667-605AB6290A4B}|CourseNestAPI.csproj|solutionrelative:controllers\\userenrollmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83AAC1B4-B2AF-4E28-A667-605AB6290A4B}|CourseNestAPI.csproj|c:\\users\\asus\\source\\repos\\coursenestapi\\.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{83AAC1B4-B2AF-4E28-A667-605AB6290A4B}|CourseNestAPI.csproj|solutionrelative:.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83AAC1B4-B2AF-4E28-A667-605AB6290A4B}|CourseNestAPI.csproj|c:\\users\\asus\\source\\repos\\coursenestapi\\coursenestapi.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "RelativeMoniker": "D:0:0:{83AAC1B4-B2AF-4E28-A667-605AB6290A4B}|CourseNestAPI.csproj|solutionrelative:coursenestapi.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83AAC1B4-B2AF-4E28-A667-605AB6290A4B}|CourseNestAPI.csproj|c:\\users\\asus\\source\\repos\\coursenestapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{83AAC1B4-B2AF-4E28-A667-605AB6290A4B}|CourseNestAPI.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83AAC1B4-B2AF-4E28-A667-605AB6290A4B}|CourseNestAPI.csproj|c:\\users\\asus\\source\\repos\\coursenestapi\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{83AAC1B4-B2AF-4E28-A667-605AB6290A4B}|CourseNestAPI.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83AAC1B4-B2AF-4E28-A667-605AB6290A4B}|CourseNestAPI.csproj|c:\\users\\asus\\source\\repos\\coursenestapi\\coursenestapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{83AAC1B4-B2AF-4E28-A667-605AB6290A4B}|CourseNestAPI.csproj|solutionrelative:coursenestapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83AAC1B4-B2AF-4E28-A667-605AB6290A4B}|CourseNestAPI.csproj|c:\\users\\asus\\source\\repos\\coursenestapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{83AAC1B4-B2AF-4E28-A667-605AB6290A4B}|CourseNestAPI.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83AAC1B4-B2AF-4E28-A667-605AB6290A4B}|CourseNestAPI.csproj|c:\\users\\asus\\source\\repos\\coursenestapi\\controllers\\coursecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{83AAC1B4-B2AF-4E28-A667-605AB6290A4B}|CourseNestAPI.csproj|solutionrelative:controllers\\coursecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83AAC1B4-B2AF-4E28-A667-605AB6290A4B}|CourseNestAPI.csproj|c:\\users\\asus\\source\\repos\\coursenestapi\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{83AAC1B4-B2AF-4E28-A667-605AB6290A4B}|CourseNestAPI.csproj|solutionrelative:data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83AAC1B4-B2AF-4E28-A667-605AB6290A4B}|CourseNestAPI.csproj|c:\\users\\asus\\source\\repos\\coursenestapi\\repositories\\categoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{83AAC1B4-B2AF-4E28-A667-605AB6290A4B}|CourseNestAPI.csproj|solutionrelative:repositories\\categoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83AAC1B4-B2AF-4E28-A667-605AB6290A4B}|CourseNestAPI.csproj|c:\\users\\asus\\source\\repos\\coursenestapi\\controllers\\availableseatscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{83AAC1B4-B2AF-4E28-A667-605AB6290A4B}|CourseNestAPI.csproj|solutionrelative:controllers\\availableseatscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83AAC1B4-B2AF-4E28-A667-605AB6290A4B}|CourseNestAPI.csproj|c:\\users\\asus\\source\\repos\\coursenestapi\\repositories\\enrollmentcartrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{83AAC1B4-B2AF-4E28-A667-605AB6290A4B}|CourseNestAPI.csproj|solutionrelative:repositories\\enrollmentcartrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83AAC1B4-B2AF-4E28-A667-605AB6290A4B}|CourseNestAPI.csproj|c:\\users\\asus\\source\\repos\\coursenestapi\\data\\dbseeder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{83AAC1B4-B2AF-4E28-A667-605AB6290A4B}|CourseNestAPI.csproj|solutionrelative:data\\dbseeder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83AAC1B4-B2AF-4E28-A667-605AB6290A4B}|CourseNestAPI.csproj|c:\\users\\asus\\source\\repos\\coursenestapi\\repositories\\ienrollmentcartrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{83AAC1B4-B2AF-4E28-A667-605AB6290A4B}|CourseNestAPI.csproj|solutionrelative:repositories\\ienrollmentcartrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83AAC1B4-B2AF-4E28-A667-605AB6290A4B}|CourseNestAPI.csproj|c:\\users\\asus\\source\\repos\\coursenestapi\\models\\enrollmentcart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{83AAC1B4-B2AF-4E28-A667-605AB6290A4B}|CourseNestAPI.csproj|solutionrelative:models\\enrollmentcart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83AAC1B4-B2AF-4E28-A667-605AB6290A4B}|CourseNestAPI.csproj|c:\\users\\asus\\source\\repos\\coursenestapi\\models\\enrollmentdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{83AAC1B4-B2AF-4E28-A667-605AB6290A4B}|CourseNestAPI.csproj|solutionrelative:models\\enrollmentdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83AAC1B4-B2AF-4E28-A667-605AB6290A4B}|CourseNestAPI.csproj|c:\\users\\asus\\source\\repos\\coursenestapi\\models\\enrollmentcartdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{83AAC1B4-B2AF-4E28-A667-605AB6290A4B}|CourseNestAPI.csproj|solutionrelative:models\\enrollmentcartdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83AAC1B4-B2AF-4E28-A667-605AB6290A4B}|CourseNestAPI.csproj|c:\\users\\asus\\source\\repos\\coursenestapi\\repositories\\homerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{83AAC1B4-B2AF-4E28-A667-605AB6290A4B}|CourseNestAPI.csproj|solutionrelative:repositories\\homerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83AAC1B4-B2AF-4E28-A667-605AB6290A4B}|CourseNestAPI.csproj|c:\\users\\asus\\source\\repos\\coursenestapi\\repositories\\courserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{83AAC1B4-B2AF-4E28-A667-605AB6290A4B}|CourseNestAPI.csproj|solutionrelative:repositories\\courserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83AAC1B4-B2AF-4E28-A667-605AB6290A4B}|CourseNestAPI.csproj|c:\\users\\asus\\source\\repos\\coursenestapi\\repositories\\iuserenrollmentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{83AAC1B4-B2AF-4E28-A667-605AB6290A4B}|CourseNestAPI.csproj|solutionrelative:repositories\\iuserenrollmentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83AAC1B4-B2AF-4E28-A667-605AB6290A4B}|CourseNestAPI.csproj|c:\\users\\asus\\source\\repos\\coursenestapi\\repositories\\ihomerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{83AAC1B4-B2AF-4E28-A667-605AB6290A4B}|CourseNestAPI.csproj|solutionrelative:repositories\\ihomerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83AAC1B4-B2AF-4E28-A667-605AB6290A4B}|CourseNestAPI.csproj|c:\\users\\asus\\source\\repos\\coursenestapi\\controllers\\adminoperationscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{83AAC1B4-B2AF-4E28-A667-605AB6290A4B}|CourseNestAPI.csproj|solutionrelative:controllers\\adminoperationscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83AAC1B4-B2AF-4E28-A667-605AB6290A4B}|CourseNestAPI.csproj|c:\\users\\asus\\source\\repos\\coursenestapi\\repositories\\userenrollmentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{83AAC1B4-B2AF-4E28-A667-605AB6290A4B}|CourseNestAPI.csproj|solutionrelative:repositories\\userenrollmentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83AAC1B4-B2AF-4E28-A667-605AB6290A4B}|CourseNestAPI.csproj|c:\\users\\asus\\source\\repos\\coursenestapi\\repositories\\seatsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{83AAC1B4-B2AF-4E28-A667-605AB6290A4B}|CourseNestAPI.csproj|solutionrelative:repositories\\seatsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83AAC1B4-B2AF-4E28-A667-605AB6290A4B}|CourseNestAPI.csproj|c:\\users\\asus\\source\\repos\\coursenestapi\\migrations\\20240810165210_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{83AAC1B4-B2AF-4E28-A667-605AB6290A4B}|CourseNestAPI.csproj|solutionrelative:migrations\\20240810165210_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 8,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "CourseController.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\CourseNestAPI\\Controllers\\CourseController.cs",
+              "RelativeDocumentMoniker": "Controllers\\CourseController.cs",
+              "ToolTip": "C:\\Users\\Asus\\source\\repos\\CourseNestAPI\\Controllers\\CourseController.cs",
+              "RelativeToolTip": "Controllers\\CourseController.cs",
+              "ViewState": "AQIAACMAAAAAAAAAAAAUwBUAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-10T05:07:41.559Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\CourseNestAPI\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\Asus\\source\\repos\\CourseNestAPI\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Controllers\\HomeController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACgAAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-10T05:10:17.136Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\CourseNestAPI\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\Asus\\source\\repos\\CourseNestAPI\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAABRAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-08-10T04:46:58.91Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "CourseNestAPI.csproj",
+              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\CourseNestAPI\\CourseNestAPI.csproj",
+              "RelativeDocumentMoniker": "CourseNestAPI.csproj",
+              "ToolTip": "C:\\Users\\Asus\\source\\repos\\CourseNestAPI\\CourseNestAPI.csproj",
+              "RelativeToolTip": "CourseNestAPI.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-08-10T16:01:14.914Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "WeatherForecastController.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\CourseNestAPI\\Controllers\\WeatherForecastController.cs",
+              "RelativeDocumentMoniker": "Controllers\\WeatherForecastController.cs",
+              "ToolTip": "C:\\Users\\Asus\\source\\repos\\CourseNestAPI\\Controllers\\WeatherForecastController.cs",
+              "RelativeToolTip": "Controllers\\WeatherForecastController.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAAwBQAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-10T05:37:55.768Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "CategoryRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\CourseNestAPI\\Repositories\\CategoryRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\CategoryRepository.cs",
+              "ToolTip": "C:\\Users\\Asus\\source\\repos\\CourseNestAPI\\Repositories\\CategoryRepository.cs",
+              "RelativeToolTip": "Repositories\\CategoryRepository.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAA1wA0AAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-10T15:48:10.702Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CategoryController.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\CourseNestAPI\\Controllers\\CategoryController.cs",
+              "RelativeDocumentMoniker": "Controllers\\CategoryController.cs",
+              "ToolTip": "C:\\Users\\Asus\\source\\repos\\CourseNestAPI\\Controllers\\CategoryController.cs",
+              "RelativeToolTip": "Controllers\\CategoryController.cs",
+              "ViewState": "AQIAAGsAAAAAAAAAAAAwwIAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-10T05:06:04.732Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "EnrollmentCartController.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\CourseNestAPI\\Controllers\\EnrollmentCartController.cs",
+              "RelativeDocumentMoniker": "Controllers\\EnrollmentCartController.cs",
+              "ToolTip": "C:\\Users\\Asus\\source\\repos\\CourseNestAPI\\Controllers\\EnrollmentCartController.cs",
+              "RelativeToolTip": "Controllers\\EnrollmentCartController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEsAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-10T05:09:22.572Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\CourseNestAPI\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\Asus\\source\\repos\\CourseNestAPI\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAC0AAAAAAAAAAAAcwDwAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-10T04:53:10.172Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": ".cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\CourseNestAPI\\.cs",
+              "RelativeDocumentMoniker": ".cs",
+              "ToolTip": "C:\\Users\\Asus\\source\\repos\\CourseNestAPI\\.cs",
+              "RelativeToolTip": ".cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-10T17:03:45.59Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "UserEnrollmentController.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\CourseNestAPI\\Controllers\\UserEnrollmentController.cs",
+              "RelativeDocumentMoniker": "Controllers\\UserEnrollmentController.cs",
+              "ToolTip": "C:\\Users\\Asus\\source\\repos\\CourseNestAPI\\Controllers\\UserEnrollmentController.cs",
+              "RelativeToolTip": "Controllers\\UserEnrollmentController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-10T05:37:40.609Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "CourseNestAPI.http",
+              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\CourseNestAPI\\CourseNestAPI.http",
+              "RelativeDocumentMoniker": "CourseNestAPI.http",
+              "ToolTip": "C:\\Users\\Asus\\source\\repos\\CourseNestAPI\\CourseNestAPI.http",
+              "RelativeToolTip": "CourseNestAPI.http",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
+              "WhenOpened": "2024-08-10T16:58:00.953Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "20240810165210_InitialCreate.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\CourseNestAPI\\Migrations\\20240810165210_InitialCreate.cs",
+              "RelativeDocumentMoniker": "Migrations\\20240810165210_InitialCreate.cs",
+              "ToolTip": "C:\\Users\\Asus\\source\\repos\\CourseNestAPI\\Migrations\\20240810165210_InitialCreate.cs",
+              "RelativeToolTip": "Migrations\\20240810165210_InitialCreate.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-10T16:52:11.533Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\CourseNestAPI\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "Data\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\Asus\\source\\repos\\CourseNestAPI\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "Data\\ApplicationDbContext.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAQwAcAAAAyAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-10T15:55:12.886Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "AvailableSeatsController.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\CourseNestAPI\\Controllers\\AvailableSeatsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AvailableSeatsController.cs",
+              "ToolTip": "C:\\Users\\Asus\\source\\repos\\CourseNestAPI\\Controllers\\AvailableSeatsController.cs",
+              "RelativeToolTip": "Controllers\\AvailableSeatsController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-10T05:04:15.655Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "EnrollmentCartRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\CourseNestAPI\\Repositories\\EnrollmentCartRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\EnrollmentCartRepository.cs",
+              "ToolTip": "C:\\Users\\Asus\\source\\repos\\CourseNestAPI\\Repositories\\EnrollmentCartRepository.cs",
+              "RelativeToolTip": "Repositories\\EnrollmentCartRepository.cs",
+              "ViewState": "AQIAADMAAAAAAAAAAAAYwCUAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-10T15:49:07.264Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "DbSeeder.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\CourseNestAPI\\Data\\DbSeeder.cs",
+              "RelativeDocumentMoniker": "Data\\DbSeeder.cs",
+              "ToolTip": "C:\\Users\\Asus\\source\\repos\\CourseNestAPI\\Data\\DbSeeder.cs",
+              "RelativeToolTip": "Data\\DbSeeder.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-10T15:54:02.742Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "IEnrollmentCartRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\CourseNestAPI\\Repositories\\IEnrollmentCartRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\IEnrollmentCartRepository.cs",
+              "ToolTip": "C:\\Users\\Asus\\source\\repos\\CourseNestAPI\\Repositories\\IEnrollmentCartRepository.cs",
+              "RelativeToolTip": "Repositories\\IEnrollmentCartRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-10T15:52:54.529Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "EnrollmentCart.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\CourseNestAPI\\Models\\EnrollmentCart.cs",
+              "RelativeDocumentMoniker": "Models\\EnrollmentCart.cs",
+              "ToolTip": "C:\\Users\\Asus\\source\\repos\\CourseNestAPI\\Models\\EnrollmentCart.cs",
+              "RelativeToolTip": "Models\\EnrollmentCart.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-10T15:50:15.426Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "EnrollmentDetail.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\CourseNestAPI\\Models\\EnrollmentDetail.cs",
+              "RelativeDocumentMoniker": "Models\\EnrollmentDetail.cs",
+              "ToolTip": "C:\\Users\\Asus\\source\\repos\\CourseNestAPI\\Models\\EnrollmentDetail.cs",
+              "RelativeToolTip": "Models\\EnrollmentDetail.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-10T15:48:56.345Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "EnrollmentCartDetail.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\CourseNestAPI\\Models\\EnrollmentCartDetail.cs",
+              "RelativeDocumentMoniker": "Models\\EnrollmentCartDetail.cs",
+              "ToolTip": "C:\\Users\\Asus\\source\\repos\\CourseNestAPI\\Models\\EnrollmentCartDetail.cs",
+              "RelativeToolTip": "Models\\EnrollmentCartDetail.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-10T15:50:05.437Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "HomeRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\CourseNestAPI\\Repositories\\HomeRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\HomeRepository.cs",
+              "ToolTip": "C:\\Users\\Asus\\source\\repos\\CourseNestAPI\\Repositories\\HomeRepository.cs",
+              "RelativeToolTip": "Repositories\\HomeRepository.cs",
+              "ViewState": "AQIAABIAAAAAAAAAAAAwwBEAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-10T15:49:38.864Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "CourseRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\CourseNestAPI\\Repositories\\CourseRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\CourseRepository.cs",
+              "ToolTip": "C:\\Users\\Asus\\source\\repos\\CourseNestAPI\\Repositories\\CourseRepository.cs",
+              "RelativeToolTip": "Repositories\\CourseRepository.cs",
+              "ViewState": "AQIAABIAAAAAAAAAAAAmwAwAAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-10T15:48:39.982Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "IUserEnrollmentRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\CourseNestAPI\\Repositories\\IUserEnrollmentRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\IUserEnrollmentRepository.cs",
+              "ToolTip": "C:\\Users\\Asus\\source\\repos\\CourseNestAPI\\Repositories\\IUserEnrollmentRepository.cs",
+              "RelativeToolTip": "Repositories\\IUserEnrollmentRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-10T15:47:54.095Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "IHomeRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\CourseNestAPI\\Repositories\\IHomeRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\IHomeRepository.cs",
+              "ToolTip": "C:\\Users\\Asus\\source\\repos\\CourseNestAPI\\Repositories\\IHomeRepository.cs",
+              "RelativeToolTip": "Repositories\\IHomeRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-10T15:47:41.643Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "UserEnrollmentRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\CourseNestAPI\\Repositories\\UserEnrollmentRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\UserEnrollmentRepository.cs",
+              "ToolTip": "C:\\Users\\Asus\\source\\repos\\CourseNestAPI\\Repositories\\UserEnrollmentRepository.cs",
+              "RelativeToolTip": "Repositories\\UserEnrollmentRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-10T15:43:55.251Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "SeatsRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\CourseNestAPI\\Repositories\\SeatsRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\SeatsRepository.cs",
+              "ToolTip": "C:\\Users\\Asus\\source\\repos\\CourseNestAPI\\Repositories\\SeatsRepository.cs",
+              "RelativeToolTip": "Repositories\\SeatsRepository.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAAwDoAAABJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-10T15:43:09.485Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "AdminOperationsController.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\CourseNestAPI\\Controllers\\AdminOperationsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AdminOperationsController.cs",
+              "ToolTip": "C:\\Users\\Asus\\source\\repos\\CourseNestAPI\\Controllers\\AdminOperationsController.cs",
+              "RelativeToolTip": "Controllers\\AdminOperationsController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAFAAAABDAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-10T05:01:57.837Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

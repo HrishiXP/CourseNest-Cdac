@@ -1,0 +1,6 @@
+@CourseNestAPI_HostAddress = http://localhost:5170
+
+GET {{CourseNestAPI_HostAddress}}/course/
+Accept: application/json
+
+###

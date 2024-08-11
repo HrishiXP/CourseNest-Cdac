@@ -17,7 +17,7 @@ namespace CourseNest.Models
         public string? InstructorName { get; set; }
         [Required]
         public double CourseFee { get; set; }
-        public string? Image { get; set; }
+       // public string? Image { get; set; }
         [Required]
         public int CategoryId { get; set; }
         public Category Category { get; set; }

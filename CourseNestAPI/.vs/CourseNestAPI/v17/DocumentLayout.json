@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "D:\\CDAC\\CourseNest\\CourseNestAPI\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{83AAC1B4-B2AF-4E28-A667-605AB6290A4B}|CourseNestAPI.csproj|d:\\cdac\\coursenest\\coursenestapi\\repositories\\courserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{83AAC1B4-B2AF-4E28-A667-605AB6290A4B}|CourseNestAPI.csproj|solutionrelative:repositories\\courserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{83AAC1B4-B2AF-4E28-A667-605AB6290A4B}|CourseNestAPI.csproj|d:\\cdac\\coursenest\\coursenestapi\\controllers\\coursecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{83AAC1B4-B2AF-4E28-A667-605AB6290A4B}|CourseNestAPI.csproj|solutionrelative:controllers\\coursecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -13,55 +17,49 @@
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/CourseNestAPIDb/True/SqlTable/dbo.Category.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{83AAC1B4-B2AF-4E28-A667-605AB6290A4B}|CourseNestAPI.csproj|d:\\cdac\\coursenest\\coursenestapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{83AAC1B4-B2AF-4E28-A667-605AB6290A4B}|CourseNestAPI.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{83AAC1B4-B2AF-4E28-A667-605AB6290A4B}|CourseNestAPI.csproj|d:\\cdac\\coursenest\\coursenestapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{83AAC1B4-B2AF-4E28-A667-605AB6290A4B}|CourseNestAPI.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{83AAC1B4-B2AF-4E28-A667-605AB6290A4B}|CourseNestAPI.csproj|d:\\cdac\\coursenest\\coursenestapi\\models\\dtos\\coursedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{83AAC1B4-B2AF-4E28-A667-605AB6290A4B}|CourseNestAPI.csproj|solutionrelative:models\\dtos\\coursedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/CourseNestDb/True/SqlTable/dbo.Category.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{83AAC1B4-B2AF-4E28-A667-605AB6290A4B}|CourseNestAPI.csproj|d:\\cdac\\coursenest\\coursenestapi\\models\\dtos\\categorydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{83AAC1B4-B2AF-4E28-A667-605AB6290A4B}|CourseNestAPI.csproj|solutionrelative:models\\dtos\\categorydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{83AAC1B4-B2AF-4E28-A667-605AB6290A4B}|CourseNestAPI.csproj|d:\\cdac\\coursenest\\coursenestapi\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{83AAC1B4-B2AF-4E28-A667-605AB6290A4B}|CourseNestAPI.csproj|solutionrelative:data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{83AAC1B4-B2AF-4E28-A667-605AB6290A4B}|CourseNestAPI.csproj|d:\\cdac\\coursenest\\coursenestapi\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{83AAC1B4-B2AF-4E28-A667-605AB6290A4B}|CourseNestAPI.csproj|solutionrelative:models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\CDAC\\CourseNest\\CourseNestAPI\\20240811075147_ini.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:20240811075147_ini.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{83AAC1B4-B2AF-4E28-A667-605AB6290A4B}|CourseNestAPI.csproj|d:\\cdac\\coursenest\\coursenestapi\\controllers\\userenrollmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{83AAC1B4-B2AF-4E28-A667-605AB6290A4B}|CourseNestAPI.csproj|solutionrelative:controllers\\userenrollmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{83AAC1B4-B2AF-4E28-A667-605AB6290A4B}|CourseNestAPI.csproj|d:\\cdac\\coursenest\\coursenestapi\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{83AAC1B4-B2AF-4E28-A667-605AB6290A4B}|CourseNestAPI.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{83AAC1B4-B2AF-4E28-A667-605AB6290A4B}|CourseNestAPI.csproj|d:\\cdac\\coursenest\\coursenestapi\\controllers\\enrollmentcartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{83AAC1B4-B2AF-4E28-A667-605AB6290A4B}|CourseNestAPI.csproj|solutionrelative:controllers\\enrollmentcartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{83AAC1B4-B2AF-4E28-A667-605AB6290A4B}|CourseNestAPI.csproj|d:\\cdac\\coursenest\\coursenestapi\\controllers\\adminoperationscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{83AAC1B4-B2AF-4E28-A667-605AB6290A4B}|CourseNestAPI.csproj|solutionrelative:controllers\\adminoperationscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{83AAC1B4-B2AF-4E28-A667-605AB6290A4B}|CourseNestAPI.csproj|d:\\cdac\\coursenest\\coursenestapi\\controllers\\availableseatscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{83AAC1B4-B2AF-4E28-A667-605AB6290A4B}|CourseNestAPI.csproj|solutionrelative:controllers\\availableseatscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{83AAC1B4-B2AF-4E28-A667-605AB6290A4B}|CourseNestAPI.csproj|d:\\cdac\\coursenest\\coursenestapi\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{83AAC1B4-B2AF-4E28-A667-605AB6290A4B}|CourseNestAPI.csproj|solutionrelative:controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{83AAC1B4-B2AF-4E28-A667-605AB6290A4B}|CourseNestAPI.csproj|d:\\cdac\\coursenest\\coursenestapi\\repositories\\homerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{83AAC1B4-B2AF-4E28-A667-605AB6290A4B}|CourseNestAPI.csproj|solutionrelative:repositories\\homerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{83AAC1B4-B2AF-4E28-A667-605AB6290A4B}|CourseNestAPI.csproj|d:\\cdac\\coursenest\\coursenestapi\\models\\course.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{83AAC1B4-B2AF-4E28-A667-605AB6290A4B}|CourseNestAPI.csproj|solutionrelative:models\\course.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{83AAC1B4-B2AF-4E28-A667-605AB6290A4B}|CourseNestAPI.csproj|d:\\cdac\\coursenest\\coursenestapi\\coursenestapi.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
-      "RelativeMoniker": "D:0:0:{83AAC1B4-B2AF-4E28-A667-605AB6290A4B}|CourseNestAPI.csproj|solutionrelative:coursenestapi.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+      "AbsoluteMoniker": "D:0:0:{83AAC1B4-B2AF-4E28-A667-605AB6290A4B}|CourseNestAPI.csproj|d:\\cdac\\coursenest\\coursenestapi\\shared\\fileservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{83AAC1B4-B2AF-4E28-A667-605AB6290A4B}|CourseNestAPI.csproj|solutionrelative:shared\\fileservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/CourseNestAPIDb/True/SqlTable/dbo.AspNetUsers.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+      "AbsoluteMoniker": "D:0:0:{83AAC1B4-B2AF-4E28-A667-605AB6290A4B}|CourseNestAPI.csproj|d:\\cdac\\coursenest\\coursenestapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{83AAC1B4-B2AF-4E28-A667-605AB6290A4B}|CourseNestAPI.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83AAC1B4-B2AF-4E28-A667-605AB6290A4B}|CourseNestAPI.csproj|d:\\cdac\\coursenest\\coursenestapi\\.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{83AAC1B4-B2AF-4E28-A667-605AB6290A4B}|CourseNestAPI.csproj|solutionrelative:.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Akash T Kalpande\\AppData\\Local\\Temp\\dbo.Course.data.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83AAC1B4-B2AF-4E28-A667-605AB6290A4B}|CourseNestAPI.csproj|d:\\cdac\\coursenest\\coursenestapi\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{83AAC1B4-B2AF-4E28-A667-605AB6290A4B}|CourseNestAPI.csproj|solutionrelative:controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Akash T Kalpande\\AppData\\Local\\Temp\\dbo.Course.data.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame"
     }
   ],
   "DocumentGroupContainers": [
@@ -71,7 +69,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 10,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -79,201 +77,185 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "dbo.Course [Data]",
-              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/CourseNestAPIDb/True/SqlTable/dbo.Course.sql",
-              "ToolTip": "dbo.Course [Data]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2024-08-10T19:31:04.453Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "dbo.Category [Data]",
-              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/CourseNestAPIDb/True/SqlTable/dbo.Category.sql",
-              "ToolTip": "dbo.Category [Data]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2024-08-10T19:27:40.358Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "CourseDTO.cs",
-              "DocumentMoniker": "D:\\CDAC\\CourseNest\\CourseNestAPI\\Models\\DTOs\\CourseDTO.cs",
-              "RelativeDocumentMoniker": "Models\\DTOs\\CourseDTO.cs",
-              "ToolTip": "D:\\CDAC\\CourseNest\\CourseNestAPI\\Models\\DTOs\\CourseDTO.cs",
-              "RelativeToolTip": "Models\\DTOs\\CourseDTO.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-10T19:19:59.419Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "CategoryDTO.cs",
-              "DocumentMoniker": "D:\\CDAC\\CourseNest\\CourseNestAPI\\Models\\DTOs\\CategoryDTO.cs",
-              "RelativeDocumentMoniker": "Models\\DTOs\\CategoryDTO.cs",
-              "ToolTip": "D:\\CDAC\\CourseNest\\CourseNestAPI\\Models\\DTOs\\CategoryDTO.cs",
-              "RelativeToolTip": "Models\\DTOs\\CategoryDTO.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-10T19:19:50.446Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Category.cs",
-              "DocumentMoniker": "D:\\CDAC\\CourseNest\\CourseNestAPI\\Models\\Category.cs",
-              "RelativeDocumentMoniker": "Models\\Category.cs",
-              "ToolTip": "D:\\CDAC\\CourseNest\\CourseNestAPI\\Models\\Category.cs",
-              "RelativeToolTip": "Models\\Category.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-10T19:19:38.15Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "UserEnrollmentController.cs",
-              "DocumentMoniker": "D:\\CDAC\\CourseNest\\CourseNestAPI\\Controllers\\UserEnrollmentController.cs",
-              "RelativeDocumentMoniker": "Controllers\\UserEnrollmentController.cs",
-              "ToolTip": "D:\\CDAC\\CourseNest\\CourseNestAPI\\Controllers\\UserEnrollmentController.cs",
-              "RelativeToolTip": "Controllers\\UserEnrollmentController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAqAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-10T19:04:28.394Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "EnrollmentCartController.cs",
-              "DocumentMoniker": "D:\\CDAC\\CourseNest\\CourseNestAPI\\Controllers\\EnrollmentCartController.cs",
-              "RelativeDocumentMoniker": "Controllers\\EnrollmentCartController.cs",
-              "ToolTip": "D:\\CDAC\\CourseNest\\CourseNestAPI\\Controllers\\EnrollmentCartController.cs",
-              "RelativeToolTip": "Controllers\\EnrollmentCartController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAGAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-10T19:04:09.782Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "AvailableSeatsController.cs",
-              "DocumentMoniker": "D:\\CDAC\\CourseNest\\CourseNestAPI\\Controllers\\AvailableSeatsController.cs",
-              "RelativeDocumentMoniker": "Controllers\\AvailableSeatsController.cs",
-              "ToolTip": "D:\\CDAC\\CourseNest\\CourseNestAPI\\Controllers\\AvailableSeatsController.cs",
-              "RelativeToolTip": "Controllers\\AvailableSeatsController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAqAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-10T19:03:54.953Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "CategoryController.cs",
-              "DocumentMoniker": "D:\\CDAC\\CourseNest\\CourseNestAPI\\Controllers\\CategoryController.cs",
-              "RelativeDocumentMoniker": "Controllers\\CategoryController.cs",
-              "ToolTip": "D:\\CDAC\\CourseNest\\CourseNestAPI\\Controllers\\CategoryController.cs",
-              "RelativeToolTip": "Controllers\\CategoryController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAqAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-10T19:03:45.344Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "CourseController.cs",
-              "DocumentMoniker": "D:\\CDAC\\CourseNest\\CourseNestAPI\\Controllers\\CourseController.cs",
-              "RelativeDocumentMoniker": "Controllers\\CourseController.cs",
-              "ToolTip": "D:\\CDAC\\CourseNest\\CourseNestAPI\\Controllers\\CourseController.cs",
-              "RelativeToolTip": "Controllers\\CourseController.cs",
-              "ViewState": "AQIAAE4AAAAAAAAAAAAswF0AAAAJAAAA",
+              "Title": "CourseRepository.cs",
+              "DocumentMoniker": "D:\\CDAC\\CourseNest\\CourseNestAPI\\Repositories\\CourseRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\CourseRepository.cs",
+              "ToolTip": "D:\\CDAC\\CourseNest\\CourseNestAPI\\Repositories\\CourseRepository.cs",
+              "RelativeToolTip": "Repositories\\CourseRepository.cs",
+              "ViewState": "AQIAACAAAAAAAAAAAAAuwCoAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-10T19:03:22.77Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "AdminOperationsController.cs",
-              "DocumentMoniker": "D:\\CDAC\\CourseNest\\CourseNestAPI\\Controllers\\AdminOperationsController.cs",
-              "RelativeDocumentMoniker": "Controllers\\AdminOperationsController.cs",
-              "ToolTip": "D:\\CDAC\\CourseNest\\CourseNestAPI\\Controllers\\AdminOperationsController.cs",
-              "RelativeToolTip": "Controllers\\AdminOperationsController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-10T19:03:20.43Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "Course.cs",
-              "DocumentMoniker": "D:\\CDAC\\CourseNest\\CourseNestAPI\\Models\\Course.cs",
-              "RelativeDocumentMoniker": "Models\\Course.cs",
-              "ToolTip": "D:\\CDAC\\CourseNest\\CourseNestAPI\\Models\\Course.cs",
-              "RelativeToolTip": "Models\\Course.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-10T19:03:14.658Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "D:\\CDAC\\CourseNest\\CourseNestAPI\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
-              "ToolTip": "D:\\CDAC\\CourseNest\\CourseNestAPI\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "Controllers\\HomeController.cs",
-              "ViewState": "AQIAAAcAAAAAAAAAAAAAAAsAAAAqAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-10T18:59:35.053Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "CourseNestAPI.http",
-              "DocumentMoniker": "D:\\CDAC\\CourseNest\\CourseNestAPI\\CourseNestAPI.http",
-              "RelativeDocumentMoniker": "CourseNestAPI.http",
-              "ToolTip": "D:\\CDAC\\CourseNest\\CourseNestAPI\\CourseNestAPI.http",
-              "RelativeToolTip": "CourseNestAPI.http",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
-              "WhenOpened": "2024-08-10T18:58:26.338Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "dbo.AspNetUsers [Data]",
-              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/CourseNestAPIDb/True/SqlTable/dbo.AspNetUsers.sql",
-              "ToolTip": "dbo.AspNetUsers [Data]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2024-08-10T18:55:55.369Z",
+              "WhenOpened": "2024-08-11T08:18:07.61Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "dbo.Category [Data]",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/CourseNestAPIDb/True/SqlTable/dbo.Category.sql",
+              "ToolTip": "dbo.Category [Data]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2024-08-11T08:09:00.86Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\CDAC\\CourseNest\\CourseNestAPI\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "D:\\CDAC\\CourseNest\\CourseNestAPI\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-08-11T08:07:25.802Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "dbo.Category [Data]",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/CourseNestDb/True/SqlTable/dbo.Category.sql",
+              "ToolTip": "dbo.Category [Data]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2024-08-11T08:06:26.302Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "D:\\CDAC\\CourseNest\\CourseNestAPI\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "Data\\ApplicationDbContext.cs",
+              "ToolTip": "D:\\CDAC\\CourseNest\\CourseNestAPI\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "Data\\ApplicationDbContext.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAA/wBsAAAALAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-11T07:53:59.115Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "20240811075147_ini.cs",
+              "DocumentMoniker": "D:\\CDAC\\CourseNest\\CourseNestAPI\\20240811075147_ini.cs",
+              "RelativeDocumentMoniker": "20240811075147_ini.cs",
+              "ToolTip": "D:\\CDAC\\CourseNest\\CourseNestAPI\\20240811075147_ini.cs",
+              "RelativeToolTip": "20240811075147_ini.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-11T07:51:47.745Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "HomeRepository.cs",
+              "DocumentMoniker": "D:\\CDAC\\CourseNest\\CourseNestAPI\\Repositories\\HomeRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\HomeRepository.cs",
+              "ToolTip": "D:\\CDAC\\CourseNest\\CourseNestAPI\\Repositories\\HomeRepository.cs",
+              "RelativeToolTip": "Repositories\\HomeRepository.cs",
+              "ViewState": "AQIAABwAAAAAAAAAAAAlwCMAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-11T07:50:48.539Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": ".cs",
+              "DocumentMoniker": "D:\\CDAC\\CourseNest\\CourseNestAPI\\.cs",
+              "RelativeDocumentMoniker": ".cs",
+              "ToolTip": "D:\\CDAC\\CourseNest\\CourseNestAPI\\.cs",
+              "RelativeToolTip": ".cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-11T07:43:36.541Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Course.cs",
+              "DocumentMoniker": "D:\\CDAC\\CourseNest\\CourseNestAPI\\Models\\Course.cs",
+              "RelativeDocumentMoniker": "Models\\Course.cs",
+              "ToolTip": "D:\\CDAC\\CourseNest\\CourseNestAPI\\Models\\Course.cs",
+              "RelativeToolTip": "Models\\Course.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAAwBMAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-11T07:40:37.802Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "dbo.Course.data ",
+              "DocumentMoniker": "C:\\Users\\Akash T Kalpande\\AppData\\Local\\Temp\\dbo.Course.data.sql",
+              "ToolTip": "dbo.Course.data *",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2024-08-11T07:36:38.248Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "dbo.Course [Data]",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/CourseNestAPIDb/True/SqlTable/dbo.Course.sql",
+              "ToolTip": "dbo.Course [Data]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2024-08-11T07:36:08.471Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "FileService.cs",
+              "DocumentMoniker": "D:\\CDAC\\CourseNest\\CourseNestAPI\\Shared\\FileService.cs",
+              "RelativeDocumentMoniker": "Shared\\FileService.cs",
+              "ToolTip": "D:\\CDAC\\CourseNest\\CourseNestAPI\\Shared\\FileService.cs",
+              "RelativeToolTip": "Shared\\FileService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-11T07:31:57.86Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "CategoryController.cs",
+              "DocumentMoniker": "D:\\CDAC\\CourseNest\\CourseNestAPI\\Controllers\\CategoryController.cs",
+              "RelativeDocumentMoniker": "Controllers\\CategoryController.cs",
+              "ToolTip": "D:\\CDAC\\CourseNest\\CourseNestAPI\\Controllers\\CategoryController.cs",
+              "RelativeToolTip": "Controllers\\CategoryController.cs",
+              "ViewState": "AQIAACkAAAAAAAAAAAAgwAUAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-11T07:31:12.025Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\CDAC\\CourseNest\\CourseNestAPI\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "D:\\CDAC\\CourseNest\\CourseNestAPI\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAAEMAAAAAAAAAAAAQwEUAAAARAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAACAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-10T18:13:49.587Z",
+              "WhenOpened": "2024-08-11T07:18:51.5Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CourseController.cs",
+              "DocumentMoniker": "D:\\CDAC\\CourseNest\\CourseNestAPI\\Controllers\\CourseController.cs",
+              "RelativeDocumentMoniker": "Controllers\\CourseController.cs",
+              "ToolTip": "D:\\CDAC\\CourseNest\\CourseNestAPI\\Controllers\\CourseController.cs",
+              "RelativeToolTip": "Controllers\\CourseController.cs",
+              "ViewState": "AQIAAGwAAAAAAAAAAAAAwH0AAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-11T07:15:22.23Z",
               "EditorCaption": ""
             }
           ]

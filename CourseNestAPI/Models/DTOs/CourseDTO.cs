@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc.Rendering;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace CourseNest.Models.DTOs;
 public class CourseDTO
@@ -18,6 +19,7 @@ public class CourseDTO
     public string? Image { get; set; }
     [Required]
     public int CategoryId { get; set; }
+    [NotMapped]
     public IFormFile? ImageFile { get; set; }
     public IEnumerable<SelectListItem>? CategoryList { get; set; }
 }

@@ -22,9 +22,9 @@ namespace CourseNest.Data
         public DbSet<EnrollmentStatus> enrollmentStatuses { get; set; }
         public DbSet<AvailableSeats> Seatss { get; set; }
 
-        internal async Task SaveChangesAsync()
+       /* internal async Task SaveChangesAsync()
         {
             throw new NotImplementedException();
-        }
+        }*/
     }
 }

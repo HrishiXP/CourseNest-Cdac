@@ -13,10 +13,10 @@ namespace CourseNest.Repositories
         Task UpdateCourse(Course course);
     }
 
-    public class courseRepository : ICourseRepository
+    public class CourseRepository : ICourseRepository
     {
         private readonly ApplicationDbContext _context;
-        public courseRepository(ApplicationDbContext context)
+        public CourseRepository(ApplicationDbContext context)
         {
             _context = context;
         }

@@ -33,7 +33,7 @@ namespace CourseNest.Repositories
                          select new Course
                          {
                              Id = course.Id,
-                             Image = course.Image,
+                             //Image = course.Image,
                              InstructorName = course.InstructorName,
                              CourseName = course.CourseName,
                              CategoryId = course.CategoryId,

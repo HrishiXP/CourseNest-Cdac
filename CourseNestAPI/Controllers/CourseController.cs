@@ -5,7 +5,7 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using CourseNest.Constants;
-using CourseNest.Shared;
+//using CourseNest.Shared;
 
 namespace CourseNestAPI.Controllers
 {
@@ -17,13 +17,13 @@ namespace CourseNestAPI.Controllers
     {
         private readonly ICourseRepository _courseRepo;
         private readonly ICategoryRepository _categoryRepo;
-        private readonly IFileService _fileService;
+     //   private readonly IFileService _fileService;
 
-        public CourseController(ICourseRepository courseRepo, ICategoryRepository categoryRepo, IFileService fileService)
+        public CourseController(ICourseRepository courseRepo, ICategoryRepository categoryRepo/*IFileService fileService*/)
         {
             _courseRepo = courseRepo;
             _categoryRepo = categoryRepo;
-            _fileService = fileService;
+         //   _fileService = fileService;
         }
 
         // Get all courses
@@ -63,7 +63,7 @@ namespace CourseNestAPI.Controllers
 
             try
             {
-                if (courseToAdd.ImageFile != null)
+              /*  if (courseToAdd.ImageFile != null)
                 {
                     if (courseToAdd.ImageFile.Length > 1 * 1024 * 1024)
                     {
@@ -72,14 +72,14 @@ namespace CourseNestAPI.Controllers
 
                     string[] allowedExtensions = { ".jpeg", ".jpg", ".png" };
                     string imageName = await _fileService.SaveFile(courseToAdd.ImageFile, allowedExtensions);
-                    courseToAdd.Image = imageName;
-                }
-
+                   courseToAdd.Image = imageName;
+                }*/
+              
                 var course = new Course
                 {
                     CourseName = courseToAdd.CourseName,
                     InstructorName = courseToAdd.InstructorName,
-                    Image = courseToAdd.Image,
+                  //  Image = courseToAdd.Image,
                     CategoryId = courseToAdd.CategoryId,
                     CourseFee = courseToAdd.CourseFee
                 };
@@ -89,6 +89,7 @@ namespace CourseNestAPI.Controllers
             }
             catch (Exception ex)
             {
+                Console.WriteLine($"Exception occurred: {ex.Message}");
                 return BadRequest(new { message = ex.Message });
             }
         }
@@ -118,7 +119,7 @@ namespace CourseNestAPI.Controllers
                 InstructorName = course.InstructorName,
                 CategoryId = course.CategoryId,
                 CourseFee = course.CourseFee,
-                Image = course.Image
+               // Image = course.Image
             };
 
             return Ok(courseToUpdate);
@@ -149,15 +150,15 @@ namespace CourseNestAPI.Controllers
                     }
 
                     string[] allowedExtensions = { ".jpeg", ".jpg", ".png" };
-                    string imageName = await _fileService.SaveFile(courseToUpdate.ImageFile, allowedExtensions);
+                    //string imageName = await _fileService.SaveFile(courseToUpdate.ImageFile, allowedExtensions);
 
                     // Delete the old image
-                    if (!string.IsNullOrWhiteSpace(existingCourse.Image))
+                   /* if (!string.IsNullOrWhiteSpace(existingCourse.Image))
                     {
                         _fileService.DeleteFile(existingCourse.Image);
-                    }
+                    }*/
 
-                    existingCourse.Image = imageName;
+                    //existingCourse.Image = imageName;
                 }
 
                 existingCourse.CourseName = courseToUpdate.CourseName;
@@ -189,10 +190,10 @@ namespace CourseNestAPI.Controllers
 
                 await _courseRepo.DeleteCourse(course);
 
-                if (!string.IsNullOrWhiteSpace(course.Image))
+              /*  if (!string.IsNullOrWhiteSpace(course.Image))
                 {
                     _fileService.DeleteFile(course.Image);
-                }
+                }*/
 
                 return Ok(new { message = "Course deleted successfully" });
             }
@@ -203,3 +204,4 @@ namespace CourseNestAPI.Controllers
         }
     }
 }
+              

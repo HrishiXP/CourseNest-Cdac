@@ -3,7 +3,7 @@ using CourseNest.Repositories;
 using CourseNest;
 using Microsoft.AspNetCore.Identity;
 using CourseNest.Data;
-using CourseNest.Shared;
+//using CourseNest.Shared;
 using Microsoft.EntityFrameworkCore;
 
 namespace CourseNestAPI
@@ -41,8 +41,8 @@ namespace CourseNestAPI
             builder.Services.AddTransient<IUserEnrollmentRepository, UserEnrollmentRepository>();
             builder.Services.AddTransient<ISeatsRepository, SeatsRepository>();
             builder.Services.AddTransient<ICategoryRepository, CategoryRepository>();
-            builder.Services.AddTransient<IFileService, FileService>();
-            builder.Services.AddTransient<ICourseRepository, courseRepository>();
+           // builder.Services.AddTransient<IFileService, FileService>();
+            builder.Services.AddTransient<ICourseRepository, CourseRepository>();
 
             builder.Services.AddAuthorization(options =>
             {

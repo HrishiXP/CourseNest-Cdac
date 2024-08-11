@@ -42,5 +42,7 @@ public class FileService : IFileService
             throw new FileNotFoundException(fileName);
         File.Delete(fileNameWithPath);
 
+        //Filehandling
+
     }
 }

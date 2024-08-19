@@ -1,0 +1,780 @@
+import AllCustomers from "./AllCustomers"
+import AllProduct from "./AllProducts"
+import AllSellers from "./AllSellers"
+
+//backups uservalidation.js
+const uservalidation = (values) => {
+    let errors = {}
+    if (!values.name) {
+        errors.name = "Name is required"
+    }
+    if (!values.city) {
+        errors.city = "City is required"
+    }
+    if (!values.userid) {
+        errors.userid = "User id is required"
+    }
+    if (!values.phone) {
+        errors.phone = "Phone no is required"
+    }
+    if (!values.pwd) {
+        errors.pwd = "Password is required"
+    }
+    if (!values.cpwd) {
+        errors.cpwd = "Confirm password is required"
+    }
+
+    if (values.pwd && values.cpwd && values.pwd !== values.cpwd) {
+        errors.cpwd = "Password not match"
+    }
+
+    return errors;
+}
+
+export default uservalidation;
+
+//Loginvalidation.js
+// const loginvalidation=(values)=>{
+//     let errors={}
+//     if(!values.userid){
+//         errors.userid="User id is required"
+//     }
+//     if(!values.pwd){
+//         errors.pwd="Password is required"
+//     }    
+//     return errors;
+// }
+
+// export default loginvalidation;
+
+
+
+//default SellerProifle
+
+// import axios from "axios";
+// import { useEffect, useState } from "react";
+// import { useDispatch } from "react-redux";
+// import { Link, useHistory } from "react-router-dom";
+
+// function SellerProfile() {
+//   const history = useHistory();
+//   const dispatch = useDispatch();
+//   const logout = (e) => {
+//     dispatch({ type: "LogOut" });
+//     sessionStorage.clear();
+//     history.push("/");
+//   };
+//   const [sellers, setSellers] = useState([]);
+//   useEffect(() => {
+//     axios.get("http://localhost:8080/api/sellers").then((resp) => {
+//       //console.log(resp.data.data)
+//       setSellers(resp.data.data);
+//       console.log(sellers);
+//     });
+//   }, []);
+
+//   const id = sessionStorage.getItem("id");
+//   const [user, setUser] = useState({
+//     id: sessionStorage.getItem("id"),
+//     name: "",
+//     city: "",
+//     userid: "",
+//     pwd: "",
+//     phone: "",
+//   });
+
+//   useEffect(() => {
+//     axios.get("http://localhost:8080/api/sellers/" + id).then((resp) => {
+//       console.log(resp.data.data);
+//       setUser(resp.data.data);
+//     });
+//   }, []);
+//   return (
+//     <div className="container">
+//       <div className="card shadow m-3 p-2 bg-dark text-white text-center">
+//         <h4
+//           className="p-2"
+//           style={{
+//             borderBottom: "3px solid yellow",
+//             width: "300px",
+//             margin: "auto",
+//           }}
+//         >
+//           Seller Profile Page
+//         </h4>
+//         <br />
+//         <h4>Welcome {user.name}</h4>
+//         <h5>City : {user.city}</h5>
+//         <h5>User Id : {user.userid}</h5>
+//         <h5>Contact No : {user.phone}</h5>
+//       </div>
+//     </div>
+//   );
+// }
+
+// export default SellerProfile;
+
+
+
+
+
+// //Editeable sellerprofile
+// import axios from "axios";
+// import { useEffect, useState } from "react";
+// import * as React from "react";
+// import { Snackbar } from "@mui/material";
+// import MuiAlert from "@mui/material/Alert";
+// import swal from "sweetalert";
+
+// function SellerProfile() {
+//   const Alert = React.forwardRef(function Alert(props, ref) {
+//     return <MuiAlert elevation={6} ref={ref} variant="filled" {...props} />;
+//   });
+
+//   const [open, setOpen] = React.useState(false);
+
+//   const handleClick = () => {
+//     setOpen(true);
+//   };
+
+//   const handleClose = (event, reason) => {
+//     if (reason === "clickaway") {
+//       return;
+//     }
+
+//     setOpen(false);
+//   };
+
+//   const [uname, setUname] = useState(sessionStorage.getItem("uname"));
+//   const userid = sessionStorage.getItem("userid");
+//   const id = sessionStorage.getItem("id");
+//   const [user, setUser] = useState({
+//     id: id,
+//     name: "",
+//     userid: userid,
+//     pwd: "",
+//     // Add other fields you want to update here
+//   });
+
+//   useEffect(() => {
+//     axios.get(`http://localhost:8080/api/sellers/${id}`).then((resp) => {
+//       console.log(resp.data.data);
+//       setUser(resp.data.data);
+//     });
+//   }, []);
+
+//   const handleInput = (e) => {
+//     setUser({ ...user, [e.target.name]: e.target.value });
+//   };
+
+//   const handleSubmit = (e) => {
+//     e.preventDefault();
+//     axios
+//       .put(`http://localhost:8080/api/sellers/${id}`, user)
+//       .then((resp) => {
+//         console.log(resp);
+//         if (resp.data.success) {
+//           setUname(user.name);
+//           sessionStorage.setItem("uname", user.name);
+//         }
+//         handleClick(); // Trigger Snackbar
+//       })
+//       .catch((error) => {
+//         console.log("Error", error);
+//         swal({
+//           title: "Error",
+//           text: "Profile not updated",
+//           icon: "error",
+//           button: "ok",
+//         });
+//       });
+//   };
+
+//   return (
+//     <div className="container text-white">
+//       <div className="row">
+//         <div className="col-sm-7 mx-auto">
+//           <div className="card shadow bg-dark mt-3">
+//             <div className="card-body">
+//               <h4 className="p-2 text-center">Welcome {uname}</h4>
+//               <form onSubmit={handleSubmit}>
+//                 <div className="form-group form-row">
+//                   <label className="col-sm-4 form-control-label">Seller Name</label>
+//                   <div className="col-sm-8">
+//                     <input
+//                       type="text"
+//                       name="name"
+//                       value={user.name}
+//                       onChange={handleInput}
+//                       className="form-control"
+//                     />
+//                   </div>
+//                 </div>
+//                 <div className="form-group form-row">
+//                   <label className="col-sm-4 form-control-label">Email</label>
+//                   <div className="col-sm-8">
+//                     <input
+//                       type="text"
+//                       name="userid"
+//                       value={user.userid}
+//                       readOnly
+//                       className="form-control"
+//                     />
+//                   </div>
+//                 </div>
+//                 <div className="form-group form-row">
+//                   <label className="col-sm-4 form-control-label">Password</label>
+//                   <div className="col-sm-8">
+//                     <input
+//                       type="password"
+//                       name="pwd"
+//                       value={user.pwd}
+//                       onChange={handleInput}
+//                       className="form-control"
+//                     />
+//                   </div>
+//                 </div>
+//                 {/* Add other form fields for updating here */}
+
+//                 <button
+//                   className="btn btn-warning float-right"
+//                   type="submit"
+//                 >
+//                   Update Profile
+//                 </button>
+//                 <Snackbar
+//                   open={open}
+//                   autoHideDuration={3000}
+//                   onClose={handleClose}
+//                 >
+//                   <Alert
+//                     onClose={handleClose}
+//                     severity="success"
+//                     sx={{ width: "100%" }}
+//                   >
+//                     Profile Updated Successfully!!!
+//                   </Alert>
+//                 </Snackbar>
+//               </form>
+//             </div>
+//           </div>
+//         </div>
+//       </div>
+//     </div>
+//   );
+// }
+
+// export default SellerProfile;
+// -------------------------------------------------
+
+//AllSellers
+// import axios from "axios";
+// import { useEffect, useState } from "react";
+// import swal from 'sweetalert';
+// import { styled } from '@mui/material/styles';
+// import Table from '@mui/material/Table';
+// import TableBody from '@mui/material/TableBody';
+// import TableCell, { tableCellClasses } from '@mui/material/TableCell';
+// import TableContainer from '@mui/material/TableContainer';
+// import TableHead from '@mui/material/TableHead';
+// import TableRow from '@mui/material/TableRow';
+// import Paper from '@mui/material/Paper';
+
+// function AllSellers(){
+//     const [sellers,setSellers]=useState([])
+//     useEffect(()=>{
+//         axios.get("http://localhost:8080/api/sellers")
+//         .then(resp=>{
+//             //console.log(resp.data.data)
+//             setSellers(resp.data.data)
+//             console.log(sellers)
+//         })
+//     },[])
+
+
+
+
+//     const deleteSeller=(id)=>{
+//         swal({
+//             title: "Delete supplier",
+//             text: "Are you sure to delete this supplier ?",
+//             icon: "warning",
+//             buttons: true,
+//             dangerMode: true,
+//           })
+//           .then((willDelete) => {
+//             if (willDelete) {
+//            console.log(id);
+//            axios.delete("http://localhost:8080/api/sellers/"+id)
+//            .then(resp=>{
+//                 axios.get("http://localhost:8080/api/sellers")
+//                 .then(resp=>{
+//                     //console.log(resp.data.data)
+//                     setSellers(resp.data.data)            
+//                 })
+//            })
+//            swal("Supplier has been deleted!", {
+//             icon: "success",
+//             });
+//         }
+//      else {
+//       swal("Supplier is not deleted!");
+//     }
+//     })
+// }
+
+// const StyledTableCell = styled(TableCell)(({ theme }) => ({
+//     [`&.${tableCellClasses.head}`]: {
+//       backgroundColor: theme.palette.common.black,
+//       color: theme.palette.common.white,
+//     },
+//     [`&.${tableCellClasses.body}`]: {
+//       fontSize: 14,
+//     },
+//   }));
+  
+//   const StyledTableRow = styled(TableRow)(({ theme }) => ({
+//     '&:nth-of-type(odd)': {
+//       backgroundColor: theme.palette.action.hover,
+//     },
+//     // hide last border
+//     '&:last-child td, &:last-child th': {
+//       border: 0,
+//     },
+//   }));
+
+    
+//     return (
+//         <div className="container-fluid text-white">
+//             <h4 className="p-2 text-center">All Sellers</h4>
+          
+
+//             <TableContainer component={Paper}>
+//                     <Table sx={{ minWidth: 700 }} aria-label="customized table">
+//                     <TableHead>
+//                     <TableRow>
+//                     <StyledTableCell align="center">Id</StyledTableCell>
+//                     <StyledTableCell align="center">Name</StyledTableCell>
+//                     <StyledTableCell align="center">City</StyledTableCell>
+//                     <StyledTableCell align="center">Phone</StyledTableCell>
+//                     <StyledTableCell align="center">User Id</StyledTableCell>
+//                     <StyledTableCell align="center">Password</StyledTableCell>
+                  
+//                     </TableRow>
+//                     </TableHead>
+           
+//                     <TableBody>
+//                 {sellers.map(x=>(
+//                     <StyledTableRow key={x.id}>
+//                         <StyledTableCell align="center">{x.id}</StyledTableCell>
+//                         <StyledTableCell align="center">{x.name}</StyledTableCell>
+//                         <StyledTableCell align="center">{x.city}</StyledTableCell>
+//                         <StyledTableCell align="center">{x.phone}</StyledTableCell>
+//                         <StyledTableCell align="center">{x.userid}</StyledTableCell>
+//                         <StyledTableCell align="center">{x.pwd}</StyledTableCell>
+                       
+//                         </StyledTableRow>
+//                ))}
+//                </TableBody>
+//             </Table>
+//             </TableContainer>
+//         </div>
+//     )
+// }
+
+// export default AllSellers;
+
+
+//=======
+
+// AllCustomers
+// import axios from "axios";
+// import { useEffect, useState } from "react";
+// import { styled } from '@mui/material/styles';
+// import Table from '@mui/material/Table';
+// import TableBody from '@mui/material/TableBody';
+// import TableCell, { tableCellClasses } from '@mui/material/TableCell';
+// import TableContainer from '@mui/material/TableContainer';
+// import TableHead from '@mui/material/TableHead';
+// import TableRow from '@mui/material/TableRow';
+// import Paper from '@mui/material/Paper';
+
+// function AllCustomers(){
+//     const [customers,setCustomers]=useState([])
+//     useEffect(()=>{
+//         axios.get("http://localhost:8080/api/customers")
+//         .then(resp=>{
+//             setCustomers(resp.data.data)
+//             console.log(customers)
+//         })
+//     },[])
+
+//     const StyledTableCell = styled(TableCell)(({ theme }) => ({
+//         [`&.${tableCellClasses.head}`]: {
+//           backgroundColor: theme.palette.common.black,
+//           color: theme.palette.common.white,
+//         },
+//         [`&.${tableCellClasses.body}`]: {
+//           fontSize: 14,
+//         },
+//       }));
+      
+//       const StyledTableRow = styled(TableRow)(({ theme }) => ({
+//         '&:nth-of-type(odd)': {
+//           backgroundColor: theme.palette.action.hover,
+//         },
+//         // hide last border
+//         '&:last-child td, &:last-child th': {
+//           border: 0,
+//         },
+//       }));
+    
+//     return (
+//         <div className="container-fluid">
+//             <h4 className="text-white p-2 text-center">All Customers</h4>
+
+//             <TableContainer component={Paper}>
+//                     <Table sx={{ minWidth: 700 }} aria-label="customized table">
+//                     <TableHead>
+//                     <TableRow>
+//                     <StyledTableCell align="center">Name</StyledTableCell>
+//                     <StyledTableCell align="center">City</StyledTableCell>
+//                     <StyledTableCell align="center">Gender</StyledTableCell>
+//                     <StyledTableCell align="center">Phone</StyledTableCell>
+//                     <StyledTableCell align="center">User Id</StyledTableCell>
+//                     <StyledTableCell align="center">Password</StyledTableCell>
+//                     </TableRow>
+//                     </TableHead>
+//                     <TableBody>
+//                     {customers.map(x=>(
+//                     <StyledTableRow key={x.id}>
+//                         <StyledTableCell align="center">{x.name}</StyledTableCell>
+//                         <StyledTableCell align="center">{x.city}</StyledTableCell>
+//                         <StyledTableCell align="center">{x.gender}</StyledTableCell>
+//                         <StyledTableCell align="center">{x.phone}</StyledTableCell>
+//                         <StyledTableCell align="center">{x.userid}</StyledTableCell>
+//                         <StyledTableCell align="center">{x.pwd}</StyledTableCell>
+//                         </StyledTableRow>
+//                ))}
+//                </TableBody>
+//             </Table>
+//             </TableContainer>
+//         </div>
+//     )
+// }
+
+// export default AllCustomers;
+
+//==============
+
+// AllProduct
+
+// import axios from "axios";
+// import { useEffect, useState } from "react";
+// import ReactPaginate from "react-paginate";
+// import { useDispatch, useSelector } from "react-redux";
+// import {useHistory,useParams} from "react-router-dom";
+// import Product from "./Product";
+// // import TopSlider from "./TopSlider";
+// import swal from 'sweetalert';
+// import BannerVideo from "./VidCarousel"
+// import PageNextIcon from '@rsuite/icons/PageNext';
+// import PagePreviousIcon from '@rsuite/icons/PagePrevious';
+// import Footer from "./Footer";
+
+
+// function AllProduct(){
+//     const [products,setProducts]=useState([])
+//     const [totalPage,setTotalPage]=useState(0)
+//     const {pcat,subcat}=useParams()
+//     const state=useSelector((state)=>state);
+//     const [item,setItem]=useState({})
+//     const [qty,setQty]=useState(1)
+//     const dispatch=useDispatch()
+//     const history=useHistory()
+
+//     const [showDialog,setShowDialog]=useState("modal fade")
+//     const [display,setDisplay]=useState("none")
+    
+//     const showModal=(prod)=>{
+//         console.log("Child call parent")
+//         setShowDialog("modal fade show")
+//         setDisplay("block")
+//         setItem(prod)
+//     }
+
+//     const checkItem =(prodid)=>{
+//         return state.cart.findIndex(x=>x.prodid===prodid)<0
+//     }
+
+//     const closeDialog=()=>{        
+//         setShowDialog("modal fade")
+//         setDisplay("none")
+//     }
+
+//     const loadDataFromServer=(page=0,pagesize=8)=>{
+//         axios.get("http://localhost:8080/api/products/paginated?page="+page+"&pagesize="+pagesize)
+//             .then(resp=>{
+//                 console.log(resp.data.data.total)
+//                 setProducts(resp.data.data.plist)
+//                 setTotalPage(Math.ceil(resp.data.data.total/pagesize))
+//                 console.log(products)
+//             })
+//     }
+
+//     useEffect(()=>{
+//         console.log(pcat,subcat)
+//         if(pcat !== undefined){
+//             axios.get("http://localhost:8080/api/products/cats?cat="+pcat+"&subcat="+subcat)
+//             .then(resp=>{
+//                 console.log(resp.data)
+//                 setProducts(resp.data.data)
+//                 console.log(products)
+//             })
+//         }
+//         else {
+//             loadDataFromServer()
+//         }
+//     },[pcat,subcat])
+//     const addToCart=item=>{  
+//         if(sessionStorage.getItem("userid")==null){
+//             swal({
+//                 title: "Warning",
+//                 text: "Please login first to buy product",
+//                 icon: "warning",
+//                 button: "ok",
+//               });
+//             history.push("/clogin")
+//         }
+//         else if(sessionStorage.getItem("role")!=="customer"){
+//             swal({
+//                 title: "Warning",
+//                 text: "Only customer can buy product",
+//                 icon: "warning",
+//                 button: "ok",
+//               });
+//         }      
+//         else{            
+//             if(checkItem(item.prodid) && qty<4)
+//             {     
+//                 showModal() 
+//                 setDisplay("none")
+//                 setShowDialog("modal fade") 
+//                 item.qty=qty         
+//                 dispatch({type:'AddItem',payload:item})
+//                 swal({
+//                     title: "Success",
+//                     text: "Item added to cart successfully",
+//                     icon: "success",
+//                     button: "ok",
+//                   });
+//             }
+//             else{                
+//                 swal({
+//                     title: "Warning",
+//                     text: "Maximum quantity exceded or Item already in cart",
+//                     icon: "warning",
+//                     button: "ok",
+//                   });
+//             }
+//         }
+//     }
+
+
+//     const handlePageClick=({selected:selectedPage})=>{
+//         loadDataFromServer(selectedPage)
+//     }
+    
+//     return (
+//         <>                
+//         <div class="luxury-main-container">
+//         <div class="luxury-huge-text">Better For You</div>
+//         <div class="luxury-huge-text">Better For Our Planet</div>
+//         <div class="luxury-space-block-mini"></div>
+//         <div class="luxury-normal-text">We're Carbon Negative, Planet Positive.</div>
+//         <a  class="luxury-explore-link" asp-area="" asp-controller="Product" asp-action="Index">For a better Future!</a>
+
+//         </div> 
+//         <div class="luxury-space-block"></div>
+
+//         <BannerVideo/>
+//         <div class="luxury-space-block"></div>
+        
+
+//         <div className="container-fluid" style={{width:"95%"}}>
+
+//             <div className="card shadow bg-dark rounded">
+//                 <div className="card-body">
+//                 <ReactPaginate 
+//                     previousLabel=<PagePreviousIcon/>
+//                     nextLabel=<PageNextIcon/>
+//                     containerClassName={"pagination"}
+//                     pageCount={totalPage}
+//                     onPageChange={handlePageClick}
+//                     previousLinkClassName={"pagination__link"}
+//                     nextLinkClassName={"pagination__link"}
+//                     disabledClassName={"pagination__link--disabled"}
+//                     activeClassName={"pagination__link--active"} />
+//                     <div className="row">
+//                     {products.map(x=>(
+//                         <Product key={x.prodid} x={x} showModal={showModal} />
+//                     ))}
+//                     </div>
+                    
+//                 </div>
+//             </div> 
+//             {display=="block"?( 
+                
+            // <div className={showDialog} style={{zIndex:"1000",display:display}}>
+            //     <div className="modal-dialog">
+            //         <div className="modal-content">
+            //             <div className="modal-header">
+            //                 <h5>Add to Cart</h5>
+            //                 <button onClick={closeDialog} className="close">&times;</button>
+            //             </div>
+            //             <div className="modal-body">
+            //                 <div className="d-flex">
+            //                     <img src={"http://localhost:8080/"+item.photo} style={{width:"200px"}}/>
+            //                     <div className="ml-3">
+            //                         <h4 className="p-2 text-warning">{item.pname}</h4>
+            //                         <h5 className="px-2">Brand: {item.brand}</h5>
+            //                         <h5 className="px-2">Category: {item.pcat}</h5>
+            //                         <h5 className="px-2">Seller: {item.sellerName}</h5>
+            //                         <h5 className="px-2">Price: &#8377; {item.price}</h5>
+            //                         <h5 className="text-danger">Add maximum 3 quantity </h5>
+            //                         <input type="number" min="1" value={qty} onChange={e=>setQty(e.target.value)}/>
+            //                     </div>
+            //                 </div>
+            //             </div>
+            //             <div className="modal-footer">
+            //                 <button onClick={e=>addToCart(item)} className="btn btn-warning btn-sm">Add to Cart</button>
+            //             </div>
+            //         </div>
+            //        </div>
+            //    </div>) : ""}
+        
+//         </div>
+//         <Footer/>
+       
+
+
+
+        
+//         </>
+//     )
+// }
+
+// export default AllProduct;
+
+
+//=======================================================
+
+// Working all seller with show password
+
+// import axios from "axios";
+// import { useEffect, useState } from "react";
+// import swal from 'sweetalert';
+// import { styled } from '@mui/system';
+
+// const CardContainer = styled('div')({
+//   display: 'flex',
+//   flexWrap: 'wrap',
+//   gap: '16px',
+//   justifyContent: 'center',
+// });
+
+// const Card = styled('div')({
+//   background: '#222',
+//   color: 'white',
+//   padding: '24px',
+//   borderRadius: '12px',
+//   width: '300px',
+//   textAlign: 'left',
+//   cursor: 'pointer',
+//   transition: 'transform 0.2s ease-in-out',
+//   '&:hover': {
+//     transform: 'scale(1.02)',
+//   },
+//   '& h5': {
+//     margin: '0',
+//     fontWeight: 'bold',
+//     fontSize: '18px',
+//   },
+//   '& p': {
+//     margin: '8px 0',
+//     fontSize: '16px',
+//   },
+//   '& button': {
+//     background: '#4CAF50',
+//     color: 'white',
+//     border: 'none',
+//     padding: '8px 16px',
+//     borderRadius: '4px',
+//     cursor: 'pointer',
+//     margin: '8px 0',
+//     width: '100%',
+//   },
+// });
+
+// function AllSellers() {
+//   const [sellers, setSellers] = useState([]);
+
+//   useEffect(() => {
+//     axios.get("http://localhost:8080/api/sellers")
+//       .then(resp => {
+//         setSellers(resp.data.data);
+//       })
+//   }, []);
+
+//   const deleteSeller = (id) => {
+//     swal({
+//       title: "Delete Supplier",
+//       text: "Are you sure to delete this supplier?",
+//       icon: "warning",
+//       buttons: true,
+//       dangerMode: true,
+//     })
+//       .then((willDelete) => {
+//         if (willDelete) {
+//           axios.delete(`http://localhost:8080/api/sellers/${id}`)
+//             .then(resp => {
+//               setSellers(prevSellers => prevSellers.filter(seller => seller.id !== id));
+//             })
+//           swal("Supplier has been deleted!", {
+//             icon: "success",
+//           });
+//         } else {
+//           swal("Supplier is not deleted!");
+//         }
+//       })
+//   }
+
+//   const showPassword = (password) => {
+//     return swal({
+//       title: "Supplier Password",
+//       text: `Real Password: ${password}`,
+//       icon: "info",
+//       button: "Close",
+//     });
+//   }
+
+//   return (
+//     <div className="container-fluid text-white">
+//       <h4 className="p-2 text-center">Manage Sellers</h4>
+//       <CardContainer>
+//         {sellers.map((seller) => (
+//           <Card key={seller.id}>
+//             <h5>{seller.name}</h5>
+//             <p>City: {seller.city}</p>
+//             <p>User ID: {seller.userid}</p>
+//             <p>Phone: {seller.phone}</p>
+//             <button onClick={() => deleteSeller(seller.id)}>Delete</button>
+//             <button onClick={() => showPassword(seller.pwd)}>Show Password</button>
+//           </Card>
+//         ))}
+//       </CardContainer>
+//     </div>
+//   )
+// }
+
+// export default AllSellers;

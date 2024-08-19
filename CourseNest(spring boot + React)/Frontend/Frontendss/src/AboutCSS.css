@@ -1,0 +1,14 @@
+/* Global CSS to handle specific pages */
+.about-page-container {
+    background-size: cover;
+    min-height: 100vh;
+    position: relative;
+    z-index: 1; /* Make sure it's above the body background */
+    padding-top: 20px; /* Optional: Add padding if content gets cut off */
+  }
+  
+  /* Override the global background image on this page */
+  body {
+    background: none !important;
+  }
+  

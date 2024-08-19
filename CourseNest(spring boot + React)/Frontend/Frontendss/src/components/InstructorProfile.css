@@ -1,0 +1,51 @@
+/* Add this to your existing CSS file or create a new one */
+/* Custom styles for SellerProfile component */
+
+.instructor-profile-container {
+    max-width: 600px;
+    margin: 20px auto;
+  }
+  
+  .instructor-profile-card {
+    background-color: #343a40;
+    color: #fff;
+    border: 2px solid #ffc107;
+  }
+  
+  .instructor-profile-header {
+    border-bottom: 3px solid #ffc107;
+    width: 50%;
+    margin: 0 auto;
+    padding: 10px;
+  }
+  
+  .instructor-profile-content {
+    padding: 20px;
+  }
+  
+  .instructor-profile-content h4 {
+    margin-bottom: 20px;
+  }
+  
+  .instructor-profile-info {
+    margin-bottom: 20px;
+  }
+  
+  .instructor-profile-info p {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .instructor-profile-logout-btn {
+    background-color: #ffc107;
+    color: #343a40;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .instructor-profile-logout-btn:hover {
+    background-color: #ffca2c;
+  }
+  

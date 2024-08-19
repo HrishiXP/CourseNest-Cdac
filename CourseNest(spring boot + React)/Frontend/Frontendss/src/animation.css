@@ -1,0 +1,17 @@
+/* Keyframes for flipInX animation */
+@keyframes flipInX {
+    0% {
+      transform: perspective(400px) rotateX(90deg);
+      opacity: 0;
+    }
+    100% {
+      transform: perspective(400px) rotateX(0);
+      opacity: 1;
+    }
+  }
+  
+  /* Apply flipInX animation */
+  .flipInX {
+    animation: flipInX 0.8s ease-out;
+  }
+  

@@ -1,0 +1,15 @@
+.navLink {
+    color: #333;
+    margin-right: 15px;
+  }
+  
+  .navLink:hover {
+    color: #007bff;
+  }
+  
+  .brandGradient {
+    background: linear-gradient(to right, #ff6f61, #d50032);
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+  

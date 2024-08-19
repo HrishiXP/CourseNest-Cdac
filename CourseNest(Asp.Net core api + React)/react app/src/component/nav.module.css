@@ -1,0 +1,16 @@
+#l1{
+    text-decoration: none;
+  
+}
+.navbar{
+    text-decoration: none;
+    
+}
+
+.brand-gradient {
+    background: -webkit-linear-gradient(45deg, #0f0503, #10acc1);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  

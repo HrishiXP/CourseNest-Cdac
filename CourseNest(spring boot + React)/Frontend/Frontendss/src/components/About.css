@@ -1,0 +1,46 @@
+/* About.css */
+
+.card-img-top {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin: 0 auto;
+  }
+  
+  .card {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .card-body {
+    background-color: #f9f9f9;
+  }
+  
+  .text-primary {
+    color: #007bff;
+  }
+  
+  .text-primary:hover {
+    color: #0056b3;
+  }
+  
+  .font-weight-bold {
+    font-weight: 700;
+  }
+  
+  .shadow-sm {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
+  }
+  
+  .border-0 {
+    border: none;
+  }
+  
+  .rounded-lg {
+    border-radius: .5rem;
+  }
+  
